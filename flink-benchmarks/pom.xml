@@ -27,14 +27,14 @@
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_2.11</artifactId>
-	    	<version>1.6.0</version>
+            <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
+	    	<version>${flink.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-kafka-0.11_2.11</artifactId>
-	    	<version>1.6.0</version>
+            <artifactId>flink-connector-kafka-0.11_${scala.binary.version}</artifactId>
+	    	<version>${flink.version}</version>
         </dependency>
         <dependency>
             <groupId>com.yahoo.stream</groupId>
@@ -80,4 +80,5 @@
             </plugin>
         </plugins>
     </build>
+    
 </project>
